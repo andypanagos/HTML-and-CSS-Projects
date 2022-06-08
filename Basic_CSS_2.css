@@ -1,0 +1,22 @@
+p {
+	color: black;
+	font-weight: bold;
+}
+
+h1 {
+	text-shadow: 2px 2px #ff0000;
+}
+
+li {
+	color: white;
+	background-color: darkgreen;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ul {
+	color: red;
+	background-color: yellow;
+}
