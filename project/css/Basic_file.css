@@ -1,5 +1,5 @@
 body {
-    background-color:bisque;
+    background-color: #fff;
 }
 
 h1 { 
@@ -11,9 +11,9 @@ h1 {
 .container {
     width: 450px;
     height: 450px;
-    background-color:sienna;
+    background-color: #faebd7;
     border: 2px solid black;
-    border-radius: 54;
+    border-radius: 5%;
 }
 
 .container .squares:nth-child(-n+4)  {
@@ -26,32 +26,33 @@ h1 {
     border: 1px solid black;
     border-radius:25% ;
     cursor: pointer;
+    transition: transform .5s ease-in-out;
 }
 
 
 .squares:nth-child(-n+4) p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: .4cm;
-    font-weight: 100;
+    font-size: .75cm;
+    font-weight: 50;
     text-align: center;
     margin: 0;
-    text-shadow: 2px 1px 4px rgba(0,0,0 0.8);
+    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
 }
 
 .squares:nth-child(1) {
-    background: #4240ff;
+    background-color: #4240ff;
 }
 
 .squares:nth-child(2) {
-    background: red;
+    background-color: #ab3fdd;
 }
 
 .squares:nth-child(3) {
-    background: green;
+    background-color: #ae163e;
 }
 
 .squares:nth-child(4) {
-    background: yellow;
+    background-color: #00b200;
 }
 
 .container .squares:nth-child(-n+4):hover {
@@ -63,24 +64,24 @@ h1 {
     animation-timing-function: cubic-bezier(2.5,.2,.3,.2);
 }
 
-.squares:nth-child(1) {
-    background: #4240ff;
+.squares:nth-child(1):hover {
+    background: #13b4ff;
 }
 
-.squares:nth-child(2) {
-    background: red;
+.squares:nth-child(2):hover {
+    background: #d861af;
 }
 
-.squares:nth-child(3) {
-    background: green;
+.squares:nth-child(3):hover {
+    background: #81205f;
 }
 
-.squares:nth-child(4) {
-    background: yellow;
+.squares:nth-child(4):hover {
+    background: #77b800;
 }
 
 
-keyframes race {
+@keyframes race {
     0%, 100% {
         transform: translateY(0px);
         background-image: url("../Images/css/face_2.png".);
